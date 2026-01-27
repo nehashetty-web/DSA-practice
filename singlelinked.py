@@ -3,16 +3,21 @@ Write a program to insert a new node at the beginning of a singly linked list.
 Write a program to delete the last node from a singly linked list.
 Write a program to search for a given element in a singly linked list and display 
 whether it is found or not.'''
-'inserting in begining'
+# inserting in beginning
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
 def insert_begin(head, data):
-    new_node = Node(data)
+    new_node =Node(data)
     new_node.next = head
     head = new_node
     return head
 
 # insert at end
 def insert_end(head, data):
-    new_node = Node(data)
+    new_node = Node (data)
     if head is None:
         return new_node
     temp = head
@@ -51,5 +56,4 @@ def delete_value(head, value):
 
 head = None
 head = insert_begin(head, 10)
-head = insert_end(head, 20)
 travers(head)
