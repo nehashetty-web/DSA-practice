@@ -57,3 +57,5 @@ def delete_value(head, value):
 head = None
 head = insert_begin(head, 10)
 travers(head)
+head=insert_end(head,50)
+travers(head)
