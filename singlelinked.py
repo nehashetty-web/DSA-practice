@@ -59,3 +59,4 @@ head = insert_begin(head, 10)
 travers(head)
 head=insert_end(head,50)
 travers(head)
+"Problems: reverse list, middle node, cycle detection (concept)"
