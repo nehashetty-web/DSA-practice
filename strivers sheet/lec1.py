@@ -38,3 +38,11 @@ elif operator == "/":
         print("cannot divide by zero")
 else:
     print("invalid operator")
+#array-strings
+s="programming"
+count=0
+for ch in s:
+    if ch.isalpha()and ch not in "aeiou":
+        count+=1
+print(count)
+
