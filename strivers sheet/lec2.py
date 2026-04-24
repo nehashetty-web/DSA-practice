@@ -39,3 +39,33 @@ if rev==s:
     print("is planidrome")
 else:
     print("not palindrome")
+
+a=int(input("enter num1:"))
+b=int(input("enter num2:"))
+while b!=0:
+    a,b=b,a%b
+print("GCD",a)
+
+n = int(input("enter n: "))
+
+for i in range(1, n+1):
+    if n % i == 0:
+        print(i, end=" ")
+
+n = int(input("Enter number: "))
+
+if n <= 1:
+    print("Not Prime")
+else:
+    is_prime = True
+    
+    for i in range(2, n):
+        if n % i == 0:
+            is_prime = False
+            break
+    
+    if is_prime:
+        print("Prime")
+    else:
+        print("Not Prime")
+
