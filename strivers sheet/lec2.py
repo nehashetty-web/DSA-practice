@@ -69,3 +69,55 @@ else:
     else:
         print("Not Prime")
 
+def f(n):
+    if n == 0:
+        return
+    print("Hello")
+    f(n-1)
+
+f(5)
+
+def f(n):
+    if n==0:
+        return
+    print("welcome")
+    f(n-1)
+f(8)
+
+def f(i,n):
+    if i>n:
+        return
+    print(i)
+    f(i+1,n)
+f(1,99)
+
+def f(n):
+    if n==0:
+        return
+    print(n)
+    f(n-1)
+
+f(8)
+
+def sum_n(n):
+    if n==0:
+        return 0
+    return(n+sum_n(n-1))
+print(sum_n(8))
+
+def fact(n):
+    if n==0:
+        return 1
+    return n*fact(n-1)
+print(fact(5))
+
+a=[1,2,4,5,6]
+print(a[::-1])
+
+def fib(n):
+    if n==0:
+        return 0
+    if n==1:
+        return 1
+    return fib(n-1)+fib(n-2)
+print(fib(8))
