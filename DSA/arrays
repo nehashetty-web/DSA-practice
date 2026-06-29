@@ -58,4 +58,32 @@ for num in arr:
     else:
         freq[num]=1
 print(freq)
-    
+#removing zeroes
+arr=[1,0,2,0,4,2,4,0,0,]
+result=[]
+for num in arr:
+    if num!=0:
+        result.append(num)
+        print(result)
+#duplicates
+arr=[1,0,2,0,4,2,4,0,0,]
+result=[]
+for num in arr:
+    if num not in result:
+        result.append(num)
+        print(result)
+
+#missing
+arr = [1, 2, 3, 5]
+
+n = 5
+
+for i in range(1, n+1):
+    if i not in arr:
+        print(i)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+
+
+
+
+
