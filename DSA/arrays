@@ -65,7 +65,7 @@ for num in arr:
     if num!=0:
         result.append(num)
         print(result)
-#duplicates
+duplicates
 arr=[1,0,2,0,4,2,4,0,0,]
 result=[]
 for num in arr:
@@ -95,8 +95,41 @@ zeros = len(arr) - len(result)
 for i in range(zeros):
     result.append(0)
 
-print(result)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+print(result)  
 
+#mock test
+arr = [23, 45, 12, 67, 34]
+largest=arr[0]
+for num in arr:
+    if num>largest:
+        largest=num
+print(largest)
+
+
+arr = [5, 10, 15, 20] 
+for num in range(len(arr),-1,-1,-1):
+    print(arr[num])
+
+arr =[2, 5, 8, 11, 15]
+sorted=True
+for i in range(len(arr)-1):
+    if arr[i]>arr[i+1]:
+        sorted=False
+        break
+print(sorted)
+
+arr = [4, 0, 6, 0, 2, 8, 0]
+result=[]
+for num in arr:
+   if num!=0:
+       result.append(num)
+zeroes=len(arr)-len(result)
+for i in range(zeroes):
+        result.append(0)
+print(result)
+    
+
+    
 
 
 
