@@ -138,6 +138,35 @@ while left<right:
     left+=1
     right-=1
     print(arr)
+
+    #reverse a string
+    s=['s','b','a','w','r']
+    left=0
+    right=len(s)-1
+    while left<right:
+        s[left],s[right]=s[right],s[left]
+        left+=1
+        right-=1
+        print(s)
+
+# valid palindrome
+s="racecar"
+left=0
+right=len(s)-1
+while left<right:
+    if s[left]!=s[right]:
+        print("false")
+        break
+    left+=1
+    right-=1
+else:
+    print("true")
+
+#move zeroes
+
+
+
+
     
 
 
