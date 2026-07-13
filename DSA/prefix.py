@@ -51,8 +51,3 @@ for i in range(len(arr)):
     arr=[3,5,6,9,2]
     for num in arr:
         print(num)
-
-
-
-
-r
