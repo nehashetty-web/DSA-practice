@@ -48,6 +48,10 @@ for i in range(len(arr)):
     # for the next iteration
     left_sum += arr[i]
 
+    arr=[3,5,6,9,2]
+    for num in arr:
+        print(num)
+
 
 
 
