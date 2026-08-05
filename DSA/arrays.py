@@ -65,7 +65,7 @@ for num in arr:
     if num!=0:
         result.append(num)
         print(result)
-        duplicates
+#duplicates
 arr=[1,0,2,0,4,2,4,0,0,]
 result=[]
 for num in arr:
