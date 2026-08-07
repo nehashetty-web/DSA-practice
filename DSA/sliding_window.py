@@ -22,3 +22,4 @@ for i in range(k,len(arr)):
 result.append(window_sum/k)
 print(result)
     
+window = arr[i-k]
