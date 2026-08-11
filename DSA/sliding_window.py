@@ -23,3 +23,18 @@ result.append(window_sum/k)
 print(result)
     
 window = arr[i-k]
+
+#smallest subarray:
+arr = [2, 1, 5, 2, 3, 2]
+target = 7
+left=0
+current=0
+answer=len(arr)+1#as we want min we start with max by +1
+for right in range(len(arr)):
+    current+=arr[right]
+    while current>=target:
+        answer=min(answer,right-left+1)
+        current-=arr[left]
+        left+=1
+
+print(answer)
