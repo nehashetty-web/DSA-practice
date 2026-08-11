@@ -22,7 +22,6 @@ for i in range(k,len(arr)):
 result.append(window_sum/k)
 print(result)
     
-window = arr[i-k]
 
 #smallest subarray:
 arr = [2, 1, 5, 2, 3, 2]
@@ -38,3 +37,6 @@ for right in range(len(arr)):
         left+=1
 
 print(answer)
+
+
+
