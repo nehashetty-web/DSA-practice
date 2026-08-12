@@ -39,4 +39,47 @@ for right in range(len(arr)):
 print(answer)
 
 
+#longest substring without repeating
+s="abcbcabcda"
+left=0
+seen=set()
+maximum=0
+for right in range(len(s)):
+    while s[right] in seen:
+        seen.remove (s[left])
+        left+=1
+    seen.add(s[right])
+maximum=max(maximum, right-left+1)
+print(maximum)
+
+
+# Fruits Into Baskets
+
+fruits = [1, 2, 1, 2, 3]
+
+left = 0
+maximum = 0
+count = {}
+
+for right in range(len(fruits)):
+
+    if fruits[right] in count:
+        count[fruits[right]] += 1
+    else:
+        count[fruits[right]] = 1
+
+    while len(count) > 2:
+
+        count[fruits[left]] -= 1
+
+        if count[fruits[left]] == 0:
+            del count[fruits[left]]
+
+        left += 1
+
+    maximum = max(maximum, right - left + 1)
+
+print(maximum)
+
+
 
