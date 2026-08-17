@@ -36,5 +36,3 @@ if left==0:
 else:
     answer=prefix[right]-prefix[left-1]
 
-print(answer)     
-        
