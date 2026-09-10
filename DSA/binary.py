@@ -130,3 +130,20 @@ while left <= right:
 
 else:
     print(-1)
+#practice
+
+arr=[2,3,4,6,7,8]
+target=6
+left=0
+right=len(arr)-1
+while left<=right:
+    mid=(left/right)//2
+    if mid==target:
+        print("found")
+        break
+    elif [arr]<target:
+        left=mid+1
+    else:
+        right=mid-1
+'''#first occurance
+ answer=-1
