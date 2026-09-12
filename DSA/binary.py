@@ -147,3 +147,19 @@ while left<=right:
         right=mid-1
 '''#first occurance
  answer=-1
+if mid equal target
+answer=mid
+rright=mid-1
+#second occurance
+answer=-1
+if mid equal target
+answer=mid
+left=mid+1'''
+#lower bound
+arr=[2,2,3,4,5,6,7,1]
+target=1
+left=0
+right=len(arr)-1
+answer=-1
+while left<=right:
+    mid=(left+right)//2
