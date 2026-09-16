@@ -163,3 +163,18 @@ right=len(arr)-1
 answer=-1
 while left<=right:
     mid=(left+right)//2
+    if mid>=target:#for upper bound we jus do mid>target rest same 
+        left=mid+1
+    else:
+        right=mid+1
+#search in sorted array
+arr=[3,4,5,67,2,5,2]
+target=5
+left=0
+right=len(arr)-1
+while left<=right:
+    mid=(left+right)//2
+    if arr[mid]==target:
+        print(mid)
+        break
+        if arr[left]<=arr[mid]:
