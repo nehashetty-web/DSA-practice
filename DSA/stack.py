@@ -23,3 +23,16 @@ class Queue:
         if len(self.queue) == 0:
             return -1
 
+        # Remove and return the first element
+        return self.queue.pop(0)
+
+    # Returns the first element without removing it
+    def front(self):
+        # Check if the queue is empty
+        if len(self.queue) == 0:
+            return -1
+
+        # Return the first element
+        return self.queue[0]
+
+
