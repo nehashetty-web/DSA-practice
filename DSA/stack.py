@@ -36,3 +36,25 @@ class Queue:
         return self.queue[0]
 
 
+class node:
+    def__init__(self,data):
+    self.data=data
+    self.next=None
+
+current=a
+while current:
+    print(current.data)
+    current=current.next
+
+count = 0
+current = head
+
+while current:
+    count += 1
+    current = current.next
+
+print(count)
+
+key=30
+current=head
+while current:
