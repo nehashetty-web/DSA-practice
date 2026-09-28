@@ -28,3 +28,31 @@ def delete_begin(head):
           return 
      head=head.next
      return head
+def delete_value(head,value):
+     if head is None:
+          return head
+     if head.next==value:
+          return head.next
+     temp=head
+     while temp.next and temp.next.next!= value:
+          temp=temp.next
+     if temp.next:
+          temp.next=temp.next.next
+          return head
+def reverse(head):
+     prev=None
+     while curr:
+      new_node=curr.next
+      curr.next=prev
+      prev=curr 
+      curr=new_node
+      return prev
+
+
+          
+
+     
+     
+     
+
+          
