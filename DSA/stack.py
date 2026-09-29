@@ -58,3 +58,17 @@ print(count)
 key=30
 current=head
 while current:
+    if current.data==key:
+        print(found)
+    else:''
+    ("not found")
+
+new_node = Node(15)
+
+current = head
+
+for i in range(position - 1):
+    current = current.next
+
+new_node.next = current.next
+current.next = new_node
