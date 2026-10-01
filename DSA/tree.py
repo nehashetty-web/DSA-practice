@@ -43,3 +43,13 @@ def postorder(root):
 def search(root, value):
     if root is None:
         return False
+
+    if root.data == value:
+        return True
+
+    if value < root.data:
+        return search(root.left, value)
+    else:
+        return search(root.right, value)
+
+
